@@ -1,3 +1,4 @@
+using Plots
 task 1
 
 function odd_or_even(n::Int)
@@ -45,3 +46,12 @@ function count_positives(arr::Array{Int})
     end
     println("total count of positive numbers is: $count")|
 end
+
+task 5
+
+function plot_powers(n::Int)
+    plot(plot_powers,-10:0.1:10)
+
+TASK
+
+
