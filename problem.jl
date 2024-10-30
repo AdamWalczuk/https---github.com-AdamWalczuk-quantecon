@@ -52,6 +52,16 @@ task 5
 function plot_powers(n::Int)
     plot(plot_powers,-10:0.1:10)
 
-TASK
+
+end
+TASK 6
+
+
+
+
+function count_positives_broadcasting(arr)
+    sum(arr .> 0)
+end
+count_positives_broadcasting([1,2,3,4,-2,-6,-5,0])
 
 
