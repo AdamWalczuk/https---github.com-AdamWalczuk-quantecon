@@ -34,7 +34,7 @@ condition_number = cond(A)
 
 x_exact, x_num, relative_res, condition_number =  solve(α,β)
 
-println("exact solution: x_exact")
+##println("exact solution: x_exact")
 
 
 
