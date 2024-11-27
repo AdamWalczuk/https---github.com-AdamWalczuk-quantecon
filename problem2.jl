@@ -48,4 +48,8 @@ function table()
     β_values = [1, 10 , 100, 1000, 10^4, 10^5, 10^6, 10^7, 10^8, 10^9, 10^10, 10^11, 10^12]
 
     results = DataFrame(α=Float64[], x1_exact=Float64[],x1_num=Float64[], res=Float64[], condition_number=Float64[])
-    for β in
+    for β in β_values
+        x_exact, x_num, res, condition_number = solve(α,β)pus!(results,(β, x_exact[1], x_num[1], residual, condition_number))
+    end
+return results
+end
