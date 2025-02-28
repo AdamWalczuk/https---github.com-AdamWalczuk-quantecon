@@ -6,7 +6,8 @@ using Plots
 
 struct ModelParams
     β::Float64          
-    γ::Float64          
+    γ
+    ::Float64          
     α::Float64          
     δ::Float64          
     A::Float64        
@@ -429,5 +430,3 @@ function lorenz_curve(x::Vector{Float64}, ω::Vector{Float64})
     cum_x = cumsum(x_sorted .* ω_sorted) ./ total_x
     return cum_pop, cum_x
 end
-
-
